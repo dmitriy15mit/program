@@ -30,4 +30,8 @@ if __name__ ==  '__main__':
 cap.release()
 cv2.destroyAllWindows()
 
+if dArea > 100:
+    x = int(dM10 / dArea)
+    y = int(dM01 / dArea)
+    cv2.circle(img, (x, y), 10, (0, 0, 255), -1)
 
